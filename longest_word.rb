@@ -20,11 +20,11 @@ Output:"love"
 
 
 def LongestWord(sen)
-  longest = sen.split(" ")
+  longest_word_non_alpha_cleanup = sen.gsub(/[^a-zA-Z]/, " ")
+  longest = longest_word_non_alpha_cleanup.split(" ")
   longest.sort_by!(&:length).reverse!
   longest[0]
 end
-   
 # keep this function call here    
 puts "Enter your string: "
 puts "The longest word is '#{LongestWord(STDIN.gets)}'"
