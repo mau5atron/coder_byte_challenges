@@ -11,4 +11,21 @@ def FirstReverse(str)
     reverse_join = split_reverse.join("")         
 end
 # keep this function call here    
-puts FirstReverse(STDIN.gets)
+puts FirstReverse(STDIN.gets
+
+
+
+	def LetterChanges(str)
+  vowels = %w[a e i o u]
+  
+  split_case = str.split("")
+  for x in split_case do 
+     "#{x.succ}"
+  end
+ 
+#   join_case = split_case.join("")
+         
+end
+   
+# keep this function call here    
+puts LetterChanges(STDIN.gets)  
